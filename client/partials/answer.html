@@ -1,0 +1,10 @@
+<a href="/">Home</a> | <a href="#!/question/{{question._id}}">Go back to Question</a>
+<h1>{{question.question}}</h1>
+<p>{{question.description}}</p>
+<form ng-submit="createAnswer()">
+  <p><label>Your Answer</label></p>
+  <p><textarea ng-model="newAnswer.answer" rows="2" cols="40"></textarea></p>
+  <p><label>Details (optional)</label></p>
+  <p><textarea ng-model="newAnswer.details" rows="4" cols="40"></textarea></p>
+  <p><a href="#!/question/{{question._id}}">Cancel</a> <button type="submit">Submit</button></p>
+</form>
